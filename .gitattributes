@@ -1,0 +1,11 @@
+# Preserve exact byte-for-byte line endings for data, released logs/CSVs, checkpoints, and notebooks
+# so MD5/SHA-256/byte-size checks in common/core.py and data/MD5SUMS.txt pass on Linux, macOS, and Windows.
+* text=auto
+data/** -text
+*.csv -text
+*.json -text
+*.log -text
+*.ipynb -text
+*.pth binary
+*.png binary
+*.pdf binary

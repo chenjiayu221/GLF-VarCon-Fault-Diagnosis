@@ -1,0 +1,22 @@
+{
+ "mode": "M4",
+ "desc": "With M1+M3: 21-dim CEEMDAN features + MLP encoder + VarCon pretraining -> frozen linear probe",
+ "seed": 163,
+ "input_dim": 21,
+ "params": 20292,
+ "trainable_params": 516,
+ "test_correct": 61408,
+ "test_total": 62002,
+ "test_acc": 0.99042,
+ "macro_f1": 0.990419,
+ "best_val_acc": 0.991,
+ "epochs": 150,
+ "seconds": 290.5,
+ "per_class_f1": [
+  0.9810041573393028,
+  0.9806716126513081,
+  1.0,
+  1.0
+ ],
+ "pred_md5": "c0a861c6cba7031a70685c99375596ff"
+}

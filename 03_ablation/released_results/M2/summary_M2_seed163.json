@@ -1,0 +1,22 @@
+{
+ "mode": "M2",
+ "desc": "EncoderHybrid + cross-entropy pretraining -> frozen linear probe",
+ "seed": 163,
+ "input_dim": 21,
+ "params": 110660,
+ "trainable_params": 516,
+ "test_correct": 61389,
+ "test_total": 62002,
+ "test_acc": 0.990113,
+ "macro_f1": 0.990095,
+ "best_val_acc": 0.994143,
+ "epochs": 150,
+ "seconds": 451.0,
+ "per_class_f1": [
+  0.9811259566740174,
+  0.9869365582357886,
+  1.0,
+  0.9923175416133163
+ ],
+ "pred_md5": "f86fcdbd130202e3f28b03f9d4f96e19"
+}

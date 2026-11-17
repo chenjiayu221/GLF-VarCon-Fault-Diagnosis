@@ -1,0 +1,16 @@
+# Tested with Python 3.9 and the versions listed below.
+# Training needs a CUDA build of torch; the released numbers were produced with
+# torch 2.7.1+cu118 on an RTX 4080 SUPER. Evaluation runs on the CPU, and the
+# default PyPI wheel (CPU or CUDA) is enough for it.
+numpy>=1.24.3
+pandas>=2.0.3
+scikit-learn>=1.6.1
+matplotlib>=3.7.1
+torch>=2.7.1
+
+# Verified with
+#   numpy 1.24.3, pandas 2.0.3, scikit-learn 1.6.1, matplotlib 3.7.1, torch 2.7.1+cu118
+#
+# Optional (only needed when running 00_preprocessing/01_ceemdan_decompose.py from raw CSVs):
+# EMD-signal>=1.6.4
+# tqdm>=4.67.1

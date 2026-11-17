@@ -1,0 +1,70 @@
+[    0.0s] ==================================================================
+[    0.0s] M1 | 21-dim CEEMDAN features + single-layer MLP(8), no pretraining | seed=163 | input 21-dim | P1 none + P2 50 epoch | num_workers=8 | TF32=True
+[    0.0s] hyperparameters: {"pretrain_epochs": 100, "finetune_epochs": 50, "lr_pretrain": 0.0005, "lr_finetune": 0.001, "feature_keep_ratio": 0.9, "tau_1": 0.07, "epsilon": 0.05, "centroid_momentum": 0.9, "alpha_cons": 0.25, "freeze_encoder": true}
+[    1.5s] [PHASE 2] single-layer MLP supervised training starts
+[    3.2s] P2 Ep01/50 | train_acc=0.3881 | val_loss=0.9862 val_acc=0.5000
+[    4.1s] P2 Ep02/50 | train_acc=0.5254 | val_loss=0.8159 val_acc=0.6999
+[    4.9s] P2 Ep03/50 | train_acc=0.6307 | val_loss=0.6958 val_acc=0.7714
+[    6.0s] P2 Ep04/50 | train_acc=0.7391 | val_loss=0.6236 val_acc=0.8426
+[    6.6s] P2 Ep05/50 | train_acc=0.7830 | val_loss=0.5680 val_acc=0.8587
+[    7.2s] P2 Ep06/50 | train_acc=0.8016 | val_loss=0.5256 val_acc=0.8720
+[    8.0s] P2 Ep07/50 | train_acc=0.8122 | val_loss=0.4913 val_acc=0.8880
+[    9.0s] P2 Ep08/50 | train_acc=0.8196 | val_loss=0.4628 val_acc=0.8993
+[    9.9s] P2 Ep09/50 | train_acc=0.8244 | val_loss=0.4398 val_acc=0.9249
+[   10.6s] P2 Ep10/50 | train_acc=0.8288 | val_loss=0.4196 val_acc=0.9360
+[   11.5s] P2 Ep11/50 | train_acc=0.8314 | val_loss=0.4016 val_acc=0.9371
+[   12.1s] P2 Ep12/50 | train_acc=0.8347 | val_loss=0.3868 val_acc=0.9527
+[   13.1s] P2 Ep13/50 | train_acc=0.8385 | val_loss=0.3733 val_acc=0.9523
+[   13.7s] P2 Ep14/50 | train_acc=0.8393 | val_loss=0.3613 val_acc=0.9580
+[   14.5s] P2 Ep15/50 | train_acc=0.8416 | val_loss=0.3509 val_acc=0.9587
+[   15.3s] P2 Ep16/50 | train_acc=0.8450 | val_loss=0.3410 val_acc=0.9591
+[   16.2s] P2 Ep17/50 | train_acc=0.8453 | val_loss=0.3329 val_acc=0.9598
+[   16.8s] P2 Ep18/50 | train_acc=0.8481 | val_loss=0.3244 val_acc=0.9598
+[   17.6s] P2 Ep19/50 | train_acc=0.8495 | val_loss=0.3171 val_acc=0.9599
+[   18.8s] P2 Ep20/50 | train_acc=0.8521 | val_loss=0.3102 val_acc=0.9599
+[   19.5s] P2 Ep21/50 | train_acc=0.8532 | val_loss=0.3035 val_acc=0.9600
+[   20.7s] P2 Ep22/50 | train_acc=0.8543 | val_loss=0.2989 val_acc=0.9595
+[   21.7s] P2 Ep23/50 | train_acc=0.8545 | val_loss=0.2927 val_acc=0.9596
+[   22.5s] P2 Ep24/50 | train_acc=0.8559 | val_loss=0.2883 val_acc=0.9595
+[   23.4s] P2 Ep25/50 | train_acc=0.8550 | val_loss=0.2834 val_acc=0.9596
+[   24.0s] P2 Ep26/50 | train_acc=0.8564 | val_loss=0.2793 val_acc=0.9596
+[   24.6s] P2 Ep27/50 | train_acc=0.8581 | val_loss=0.2757 val_acc=0.9593
+[   25.2s] P2 Ep28/50 | train_acc=0.8581 | val_loss=0.2722 val_acc=0.9596
+[   25.9s] P2 Ep29/50 | train_acc=0.8590 | val_loss=0.2689 val_acc=0.9596
+[   26.5s] P2 Ep30/50 | train_acc=0.8591 | val_loss=0.2658 val_acc=0.9596
+[   27.1s] P2 Ep31/50 | train_acc=0.8596 | val_loss=0.2635 val_acc=0.9594
+[   27.8s] P2 Ep32/50 | train_acc=0.8610 | val_loss=0.2612 val_acc=0.9594
+[   28.7s] P2 Ep33/50 | train_acc=0.8612 | val_loss=0.2592 val_acc=0.9595
+[   29.4s] P2 Ep34/50 | train_acc=0.8618 | val_loss=0.2568 val_acc=0.9596
+[   30.1s] P2 Ep35/50 | train_acc=0.8616 | val_loss=0.2552 val_acc=0.9595
+[   30.7s] P2 Ep36/50 | train_acc=0.8611 | val_loss=0.2539 val_acc=0.9595
+[   31.3s] P2 Ep37/50 | train_acc=0.8633 | val_loss=0.2526 val_acc=0.9595
+[   32.1s] P2 Ep38/50 | train_acc=0.8617 | val_loss=0.2513 val_acc=0.9595
+[   32.7s] P2 Ep39/50 | train_acc=0.8623 | val_loss=0.2502 val_acc=0.9595
+[   33.5s] P2 Ep40/50 | train_acc=0.8621 | val_loss=0.2495 val_acc=0.9595
+[   34.3s] P2 Ep41/50 | train_acc=0.8630 | val_loss=0.2485 val_acc=0.9596
+[   35.3s] P2 Ep42/50 | train_acc=0.8615 | val_loss=0.2481 val_acc=0.9595
+[   36.3s] P2 Ep43/50 | train_acc=0.8634 | val_loss=0.2477 val_acc=0.9595
+[   37.3s] P2 Ep44/50 | train_acc=0.8637 | val_loss=0.2474 val_acc=0.9595
+[   38.2s] P2 Ep45/50 | train_acc=0.8627 | val_loss=0.2470 val_acc=0.9595
+[   38.9s] P2 Ep46/50 | train_acc=0.8631 | val_loss=0.2468 val_acc=0.9595
+[   39.7s] P2 Ep47/50 | train_acc=0.8635 | val_loss=0.2467 val_acc=0.9595
+[   40.3s] P2 Ep48/50 | train_acc=0.8630 | val_loss=0.2466 val_acc=0.9595
+[   41.0s] P2 Ep49/50 | train_acc=0.8626 | val_loss=0.2466 val_acc=0.9595
+[   41.6s] P2 Ep50/50 | train_acc=0.8634 | val_loss=0.2466 val_acc=0.9595
+[   42.3s] curves saved to ./results/Experiment_Ablation_M1_seed163/p2_training_curves_seed163.png
+[   42.9s] Mode [M1] final test result - accuracy (Acc): 0.8756 | macro F1: 0.8740
+[   42.9s] per-class F1: [0.7222, 0.7772, 1.0, 0.9966]
+[   42.9s] 
+              precision    recall  f1-score   support
+
+       Aging     0.8187    0.6460    0.7222     15501
+       Fault     0.7114    0.8565    0.7772     15500
+       Noise     1.0000    1.0000    1.0000     15501
+      Normal     0.9931    1.0000    0.9966     15500
+
+    accuracy                         0.8756     62002
+   macro avg     0.8808    0.8756    0.8740     62002
+weighted avg     0.8808    0.8756    0.8740     62002
+
+[   42.9s] DONE

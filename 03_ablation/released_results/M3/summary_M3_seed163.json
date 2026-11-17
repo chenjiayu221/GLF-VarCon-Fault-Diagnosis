@@ -1,0 +1,22 @@
+{
+ "mode": "M3",
+ "desc": "With M3: 11-dim raw-waveform features + MLP encoder + VarCon pretraining -> frozen linear probe",
+ "seed": 163,
+ "input_dim": 11,
+ "params": 19012,
+ "trainable_params": 516,
+ "test_correct": 54325,
+ "test_total": 62002,
+ "test_acc": 0.876181,
+ "macro_f1": 0.874205,
+ "best_val_acc": 0.902524,
+ "epochs": 150,
+ "seconds": 314.9,
+ "per_class_f1": [
+  0.7799466850116089,
+  0.7168725797529043,
+  1.0,
+  1.0
+ ],
+ "pred_md5": "6264b3bbbe48784a65bcb4310e74fd06"
+}

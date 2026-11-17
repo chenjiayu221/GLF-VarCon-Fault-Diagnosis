@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.py[cod]
+
+# Notebooks
+.ipynb_checkpoints/
+
+# Training & preprocessing outputs (the released files live in data/, */released_results/, and retrain_check/results/)
+/01_proposed/results/
+/02_comparison/results/
+/03_ablation/results/
+/04_sensitivity/results/
+00_preprocessing/work/
+
+# OS
+.DS_Store
+Thumbs.db

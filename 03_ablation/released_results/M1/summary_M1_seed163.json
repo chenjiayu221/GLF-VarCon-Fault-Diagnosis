@@ -1,0 +1,22 @@
+{
+ "mode": "M1",
+ "desc": "With M1: 21-dim CEEMDAN features + MLP(8)",
+ "seed": 163,
+ "input_dim": 21,
+ "params": 212,
+ "trainable_params": 212,
+ "test_correct": 54291,
+ "test_total": 62002,
+ "test_acc": 0.875633,
+ "macro_f1": 0.873993,
+ "best_val_acc": 0.959952,
+ "epochs": 50,
+ "seconds": 42.9,
+ "per_class_f1": [
+  0.7221721414920852,
+  0.7772378666354429,
+  1.0,
+  0.9965602597486096
+ ],
+ "pred_md5": "10afd875f4515305f8ed0c09312417ca"
+}

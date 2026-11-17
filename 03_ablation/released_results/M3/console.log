@@ -1,0 +1,173 @@
+[    0.0s] ==================================================================
+[    0.0s] M3 | 11-dim raw-waveform features + MLP encoder + VarCon pretraining -> frozen linear probe | seed=163 | input 11-dim | P1 100 + P2 50 epoch | num_workers=8 | TF32=True
+[    0.0s] hyperparameters: {"pretrain_epochs": 100, "finetune_epochs": 50, "lr_pretrain": 0.0005, "lr_finetune": 0.001, "feature_keep_ratio": 0.9, "tau_1": 0.07, "epsilon": 0.05, "centroid_momentum": 0.9, "alpha_cons": 0.25, "freeze_encoder": true}
+[    0.0s] [PHASE 1] contrastive pretraining starts
+[    3.7s] P1 Ep001/100 | train_loss=0.4609 train_acc=0.8827 | val_loss=0.3833 val_acc=0.8769
+[    6.6s] P1 Ep002/100 | train_loss=0.3761 train_acc=0.9320 | val_loss=0.3875 val_acc=0.8910
+[    9.3s] P1 Ep003/100 | train_loss=0.3567 train_acc=0.9435 | val_loss=0.4033 val_acc=0.8860
+[   11.9s] P1 Ep004/100 | train_loss=0.3439 train_acc=0.9518 | val_loss=0.4130 val_acc=0.8884
+[   14.4s] P1 Ep005/100 | train_loss=0.3357 train_acc=0.9575 | val_loss=0.4573 val_acc=0.8794
+[   17.0s] P1 Ep006/100 | train_loss=0.3288 train_acc=0.9625 | val_loss=0.4600 val_acc=0.8830
+[   19.7s] P1 Ep007/100 | train_loss=0.3237 train_acc=0.9658 | val_loss=0.4358 val_acc=0.8952
+[   22.2s] P1 Ep008/100 | train_loss=0.3178 train_acc=0.9698 | val_loss=0.4968 val_acc=0.8816
+[   25.0s] P1 Ep009/100 | train_loss=0.3137 train_acc=0.9723 | val_loss=0.5010 val_acc=0.8802
+[   27.5s] P1 Ep010/100 | train_loss=0.3110 train_acc=0.9736 | val_loss=0.4735 val_acc=0.8848
+[   30.0s] P1 Ep011/100 | train_loss=0.3075 train_acc=0.9757 | val_loss=0.4712 val_acc=0.8837
+[   32.8s] P1 Ep012/100 | train_loss=0.3054 train_acc=0.9768 | val_loss=0.5091 val_acc=0.8838
+[   35.4s] P1 Ep013/100 | train_loss=0.3029 train_acc=0.9781 | val_loss=0.5119 val_acc=0.8834
+[   37.9s] P1 Ep014/100 | train_loss=0.3004 train_acc=0.9791 | val_loss=0.5075 val_acc=0.8839
+[   40.4s] P1 Ep015/100 | train_loss=0.2987 train_acc=0.9800 | val_loss=0.5027 val_acc=0.8829
+[   43.0s] P1 Ep016/100 | train_loss=0.2975 train_acc=0.9809 | val_loss=0.4989 val_acc=0.8849
+[   45.5s] P1 Ep017/100 | train_loss=0.2953 train_acc=0.9822 | val_loss=0.4997 val_acc=0.8844
+[   48.2s] P1 Ep018/100 | train_loss=0.2940 train_acc=0.9827 | val_loss=0.4922 val_acc=0.8823
+[   50.6s] P1 Ep019/100 | train_loss=0.2916 train_acc=0.9840 | val_loss=0.5306 val_acc=0.8820
+[   53.1s] P1 Ep020/100 | train_loss=0.2927 train_acc=0.9838 | val_loss=0.5050 val_acc=0.8852
+[   55.5s] P1 Ep021/100 | train_loss=0.2906 train_acc=0.9844 | val_loss=0.4885 val_acc=0.8835
+[   57.8s] P1 Ep022/100 | train_loss=0.2894 train_acc=0.9851 | val_loss=0.5161 val_acc=0.8818
+[   60.5s] P1 Ep023/100 | train_loss=0.2884 train_acc=0.9858 | val_loss=0.5177 val_acc=0.8836
+[   63.4s] P1 Ep024/100 | train_loss=0.2885 train_acc=0.9858 | val_loss=0.5273 val_acc=0.8840
+[   65.9s] P1 Ep025/100 | train_loss=0.2885 train_acc=0.9860 | val_loss=0.5175 val_acc=0.8834
+[   68.3s] P1 Ep026/100 | train_loss=0.2864 train_acc=0.9866 | val_loss=0.5082 val_acc=0.8848
+[   71.0s] P1 Ep027/100 | train_loss=0.2856 train_acc=0.9869 | val_loss=0.5239 val_acc=0.8822
+[   73.5s] P1 Ep028/100 | train_loss=0.2844 train_acc=0.9876 | val_loss=0.5435 val_acc=0.8832
+[   76.0s] P1 Ep029/100 | train_loss=0.2856 train_acc=0.9874 | val_loss=0.5279 val_acc=0.8873
+[   78.5s] P1 Ep030/100 | train_loss=0.2858 train_acc=0.9872 | val_loss=0.5372 val_acc=0.8860
+[   81.1s] P1 Ep031/100 | train_loss=0.2829 train_acc=0.9884 | val_loss=0.5171 val_acc=0.8848
+[   83.9s] P1 Ep032/100 | train_loss=0.2831 train_acc=0.9883 | val_loss=0.5371 val_acc=0.8848
+[   86.4s] P1 Ep033/100 | train_loss=0.2828 train_acc=0.9883 | val_loss=0.5308 val_acc=0.8838
+[   89.0s] P1 Ep034/100 | train_loss=0.2824 train_acc=0.9888 | val_loss=0.5186 val_acc=0.8850
+[   91.5s] P1 Ep035/100 | train_loss=0.2820 train_acc=0.9891 | val_loss=0.5058 val_acc=0.8866
+[   94.1s] P1 Ep036/100 | train_loss=0.2826 train_acc=0.9889 | val_loss=0.5066 val_acc=0.8865
+[   96.7s] P1 Ep037/100 | train_loss=0.2817 train_acc=0.9889 | val_loss=0.5117 val_acc=0.8843
+[   99.3s] P1 Ep038/100 | train_loss=0.2810 train_acc=0.9893 | val_loss=0.5119 val_acc=0.8839
+[  101.9s] P1 Ep039/100 | train_loss=0.2805 train_acc=0.9893 | val_loss=0.5109 val_acc=0.8846
+[  104.5s] P1 Ep040/100 | train_loss=0.2797 train_acc=0.9899 | val_loss=0.5350 val_acc=0.8837
+[  107.3s] P1 Ep041/100 | train_loss=0.2800 train_acc=0.9900 | val_loss=0.5080 val_acc=0.8868
+[  109.8s] P1 Ep042/100 | train_loss=0.2803 train_acc=0.9898 | val_loss=0.5070 val_acc=0.8867
+[  112.4s] P1 Ep043/100 | train_loss=0.2793 train_acc=0.9901 | val_loss=0.4958 val_acc=0.8864
+[  114.9s] P1 Ep044/100 | train_loss=0.2783 train_acc=0.9903 | val_loss=0.5174 val_acc=0.8861
+[  117.8s] P1 Ep045/100 | train_loss=0.2794 train_acc=0.9902 | val_loss=0.5402 val_acc=0.8844
+[  120.3s] P1 Ep046/100 | train_loss=0.2787 train_acc=0.9904 | val_loss=0.5125 val_acc=0.8867
+[  123.2s] P1 Ep047/100 | train_loss=0.2798 train_acc=0.9901 | val_loss=0.5318 val_acc=0.8859
+[  125.8s] P1 Ep048/100 | train_loss=0.2787 train_acc=0.9902 | val_loss=0.5066 val_acc=0.8864
+[  128.3s] P1 Ep049/100 | train_loss=0.2778 train_acc=0.9906 | val_loss=0.5192 val_acc=0.8860
+[  130.6s] P1 Ep050/100 | train_loss=0.2779 train_acc=0.9906 | val_loss=0.5047 val_acc=0.8860
+[  133.2s] P1 Ep051/100 | train_loss=0.2776 train_acc=0.9908 | val_loss=0.5180 val_acc=0.8861
+[  135.9s] P1 Ep052/100 | train_loss=0.2770 train_acc=0.9911 | val_loss=0.5236 val_acc=0.8852
+[  138.4s] P1 Ep053/100 | train_loss=0.2775 train_acc=0.9911 | val_loss=0.5216 val_acc=0.8875
+[  141.0s] P1 Ep054/100 | train_loss=0.2779 train_acc=0.9908 | val_loss=0.5263 val_acc=0.8875
+[  143.5s] P1 Ep055/100 | train_loss=0.2775 train_acc=0.9909 | val_loss=0.5199 val_acc=0.8856
+[  145.9s] P1 Ep056/100 | train_loss=0.2759 train_acc=0.9913 | val_loss=0.5171 val_acc=0.8855
+[  148.2s] P1 Ep057/100 | train_loss=0.2763 train_acc=0.9913 | val_loss=0.5191 val_acc=0.8850
+[  150.4s] P1 Ep058/100 | train_loss=0.2763 train_acc=0.9915 | val_loss=0.5312 val_acc=0.8850
+[  153.0s] P1 Ep059/100 | train_loss=0.2761 train_acc=0.9916 | val_loss=0.5247 val_acc=0.8866
+[  155.5s] P1 Ep060/100 | train_loss=0.2763 train_acc=0.9915 | val_loss=0.5321 val_acc=0.8864
+[  158.0s] P1 Ep061/100 | train_loss=0.2758 train_acc=0.9917 | val_loss=0.5073 val_acc=0.8870
+[  160.5s] P1 Ep062/100 | train_loss=0.2756 train_acc=0.9918 | val_loss=0.5321 val_acc=0.8855
+[  162.8s] P1 Ep063/100 | train_loss=0.2754 train_acc=0.9919 | val_loss=0.5061 val_acc=0.8868
+[  165.3s] P1 Ep064/100 | train_loss=0.2759 train_acc=0.9919 | val_loss=0.5053 val_acc=0.8865
+[  167.9s] P1 Ep065/100 | train_loss=0.2762 train_acc=0.9916 | val_loss=0.5184 val_acc=0.8860
+[  170.5s] P1 Ep066/100 | train_loss=0.2758 train_acc=0.9918 | val_loss=0.5119 val_acc=0.8858
+[  173.0s] P1 Ep067/100 | train_loss=0.2754 train_acc=0.9918 | val_loss=0.5154 val_acc=0.8847
+[  175.7s] P1 Ep068/100 | train_loss=0.2748 train_acc=0.9921 | val_loss=0.5164 val_acc=0.8844
+[  178.2s] P1 Ep069/100 | train_loss=0.2751 train_acc=0.9919 | val_loss=0.5142 val_acc=0.8856
+[  180.7s] P1 Ep070/100 | train_loss=0.2760 train_acc=0.9917 | val_loss=0.5227 val_acc=0.8861
+[  183.5s] P1 Ep071/100 | train_loss=0.2758 train_acc=0.9917 | val_loss=0.5124 val_acc=0.8859
+[  186.1s] P1 Ep072/100 | train_loss=0.2754 train_acc=0.9920 | val_loss=0.5204 val_acc=0.8855
+[  188.4s] P1 Ep073/100 | train_loss=0.2756 train_acc=0.9918 | val_loss=0.5173 val_acc=0.8866
+[  191.0s] P1 Ep074/100 | train_loss=0.2749 train_acc=0.9920 | val_loss=0.5308 val_acc=0.8861
+[  193.4s] P1 Ep075/100 | train_loss=0.2745 train_acc=0.9922 | val_loss=0.5097 val_acc=0.8873
+[  195.8s] P1 Ep076/100 | train_loss=0.2753 train_acc=0.9921 | val_loss=0.5245 val_acc=0.8860
+[  198.2s] P1 Ep077/100 | train_loss=0.2762 train_acc=0.9917 | val_loss=0.5184 val_acc=0.8874
+[  200.8s] P1 Ep078/100 | train_loss=0.2749 train_acc=0.9921 | val_loss=0.5112 val_acc=0.8870
+[  203.3s] P1 Ep079/100 | train_loss=0.2745 train_acc=0.9920 | val_loss=0.5060 val_acc=0.8868
+[  205.7s] P1 Ep080/100 | train_loss=0.2737 train_acc=0.9925 | val_loss=0.5410 val_acc=0.8844
+[  208.4s] P1 Ep081/100 | train_loss=0.2755 train_acc=0.9922 | val_loss=0.5249 val_acc=0.8860
+[  211.2s] P1 Ep082/100 | train_loss=0.2758 train_acc=0.9920 | val_loss=0.5256 val_acc=0.8865
+[  213.7s] P1 Ep083/100 | train_loss=0.2757 train_acc=0.9920 | val_loss=0.5235 val_acc=0.8867
+[  216.1s] P1 Ep084/100 | train_loss=0.2744 train_acc=0.9921 | val_loss=0.5129 val_acc=0.8875
+[  218.6s] P1 Ep085/100 | train_loss=0.2742 train_acc=0.9922 | val_loss=0.5272 val_acc=0.8851
+[  221.2s] P1 Ep086/100 | train_loss=0.2749 train_acc=0.9922 | val_loss=0.5275 val_acc=0.8863
+[  223.7s] P1 Ep087/100 | train_loss=0.2757 train_acc=0.9922 | val_loss=0.5376 val_acc=0.8851
+[  226.2s] P1 Ep088/100 | train_loss=0.2763 train_acc=0.9920 | val_loss=0.5415 val_acc=0.8874
+[  228.7s] P1 Ep089/100 | train_loss=0.2774 train_acc=0.9917 | val_loss=0.5366 val_acc=0.8865
+[  231.5s] P1 Ep090/100 | train_loss=0.2768 train_acc=0.9919 | val_loss=0.5356 val_acc=0.8870
+[  234.3s] P1 Ep091/100 | train_loss=0.2763 train_acc=0.9920 | val_loss=0.5262 val_acc=0.8869
+[  236.9s] P1 Ep092/100 | train_loss=0.2760 train_acc=0.9920 | val_loss=0.5247 val_acc=0.8854
+[  239.8s] P1 Ep093/100 | train_loss=0.2752 train_acc=0.9924 | val_loss=0.5177 val_acc=0.8864
+[  242.4s] P1 Ep094/100 | train_loss=0.2753 train_acc=0.9922 | val_loss=0.5225 val_acc=0.8853
+[  245.2s] P1 Ep095/100 | train_loss=0.2755 train_acc=0.9921 | val_loss=0.5179 val_acc=0.8864
+[  247.9s] P1 Ep096/100 | train_loss=0.2764 train_acc=0.9919 | val_loss=0.5193 val_acc=0.8852
+[  250.9s] P1 Ep097/100 | train_loss=0.2754 train_acc=0.9923 | val_loss=0.5164 val_acc=0.8852
+[  253.6s] P1 Ep098/100 | train_loss=0.2754 train_acc=0.9922 | val_loss=0.5158 val_acc=0.8862
+[  256.5s] P1 Ep099/100 | train_loss=0.2750 train_acc=0.9925 | val_loss=0.5200 val_acc=0.8861
+[  259.0s] P1 Ep100/100 | train_loss=0.2762 train_acc=0.9920 | val_loss=0.5199 val_acc=0.8858
+[  259.7s] curves saved to ./results/Experiment_Ablation_M3_seed163/p1_training_curves_seed163.png
+[  259.7s] P1 done, best val_loss=0.3833
+[  259.7s] [PHASE 2] downstream finetuning starts (freeze_encoder=True)
+[  263.2s] P2 Ep01/50 | train_acc=0.7880 | val_loss=0.5042 val_acc=0.8711
+[  264.4s] P2 Ep02/50 | train_acc=0.9098 | val_loss=0.3655 val_acc=0.8747
+[  265.8s] P2 Ep03/50 | train_acc=0.9148 | val_loss=0.3141 val_acc=0.8782
+[  266.9s] P2 Ep04/50 | train_acc=0.9191 | val_loss=0.2955 val_acc=0.8878
+[  267.8s] P2 Ep05/50 | train_acc=0.9230 | val_loss=0.2841 val_acc=0.8891
+[  268.9s] P2 Ep06/50 | train_acc=0.9256 | val_loss=0.2787 val_acc=0.8905
+[  270.0s] P2 Ep07/50 | train_acc=0.9270 | val_loss=0.2759 val_acc=0.8941
+[  270.9s] P2 Ep08/50 | train_acc=0.9290 | val_loss=0.2702 val_acc=0.8942
+[  272.3s] P2 Ep09/50 | train_acc=0.9297 | val_loss=0.2675 val_acc=0.8942
+[  273.3s] P2 Ep10/50 | train_acc=0.9310 | val_loss=0.2664 val_acc=0.8966
+[  274.2s] P2 Ep11/50 | train_acc=0.9313 | val_loss=0.2658 val_acc=0.8944
+[  275.4s] P2 Ep12/50 | train_acc=0.9323 | val_loss=0.2627 val_acc=0.8972
+[  276.3s] P2 Ep13/50 | train_acc=0.9325 | val_loss=0.2587 val_acc=0.8991
+[  277.3s] P2 Ep14/50 | train_acc=0.9323 | val_loss=0.2580 val_acc=0.8978
+[  278.6s] P2 Ep15/50 | train_acc=0.9334 | val_loss=0.2579 val_acc=0.8980
+[  279.5s] P2 Ep16/50 | train_acc=0.9330 | val_loss=0.2539 val_acc=0.8998
+[  280.5s] P2 Ep17/50 | train_acc=0.9339 | val_loss=0.2550 val_acc=0.8998
+[  281.2s] P2 Ep18/50 | train_acc=0.9346 | val_loss=0.2532 val_acc=0.8997
+[  281.8s] P2 Ep19/50 | train_acc=0.9343 | val_loss=0.2511 val_acc=0.8999
+[  282.9s] P2 Ep20/50 | train_acc=0.9349 | val_loss=0.2526 val_acc=0.8997
+[  283.8s] P2 Ep21/50 | train_acc=0.9353 | val_loss=0.2481 val_acc=0.9002
+[  284.8s] P2 Ep22/50 | train_acc=0.9351 | val_loss=0.2496 val_acc=0.9002
+[  286.0s] P2 Ep23/50 | train_acc=0.9352 | val_loss=0.2446 val_acc=0.9015
+[  286.8s] P2 Ep24/50 | train_acc=0.9358 | val_loss=0.2495 val_acc=0.9004
+[  287.8s] P2 Ep25/50 | train_acc=0.9349 | val_loss=0.2425 val_acc=0.9004
+[  288.6s] P2 Ep26/50 | train_acc=0.9352 | val_loss=0.2491 val_acc=0.9014
+[  289.4s] P2 Ep27/50 | train_acc=0.9357 | val_loss=0.2473 val_acc=0.9022
+[  290.4s] P2 Ep28/50 | train_acc=0.9361 | val_loss=0.2460 val_acc=0.9010
+[  291.5s] P2 Ep29/50 | train_acc=0.9352 | val_loss=0.2448 val_acc=0.9016
+[  292.5s] P2 Ep30/50 | train_acc=0.9363 | val_loss=0.2442 val_acc=0.9023
+[  293.7s] P2 Ep31/50 | train_acc=0.9362 | val_loss=0.2449 val_acc=0.9022
+[  294.6s] P2 Ep32/50 | train_acc=0.9360 | val_loss=0.2525 val_acc=0.9020
+[  295.4s] P2 Ep33/50 | train_acc=0.9366 | val_loss=0.2488 val_acc=0.9022
+[  296.5s] P2 Ep34/50 | train_acc=0.9368 | val_loss=0.2441 val_acc=0.9021
+[  297.5s] P2 Ep35/50 | train_acc=0.9359 | val_loss=0.2474 val_acc=0.9023
+[  298.8s] P2 Ep36/50 | train_acc=0.9361 | val_loss=0.2462 val_acc=0.9023
+[  300.2s] P2 Ep37/50 | train_acc=0.9373 | val_loss=0.2407 val_acc=0.9022
+[  301.1s] P2 Ep38/50 | train_acc=0.9366 | val_loss=0.2450 val_acc=0.9021
+[  302.0s] P2 Ep39/50 | train_acc=0.9366 | val_loss=0.2447 val_acc=0.9024
+[  303.0s] P2 Ep40/50 | train_acc=0.9376 | val_loss=0.2451 val_acc=0.9022
+[  303.8s] P2 Ep41/50 | train_acc=0.9366 | val_loss=0.2478 val_acc=0.9024
+[  304.9s] P2 Ep42/50 | train_acc=0.9363 | val_loss=0.2407 val_acc=0.9025
+[  305.7s] P2 Ep43/50 | train_acc=0.9365 | val_loss=0.2418 val_acc=0.9025
+[  306.7s] P2 Ep44/50 | train_acc=0.9361 | val_loss=0.2454 val_acc=0.9024
+[  308.1s] P2 Ep45/50 | train_acc=0.9367 | val_loss=0.2428 val_acc=0.9022
+[  308.9s] P2 Ep46/50 | train_acc=0.9356 | val_loss=0.2439 val_acc=0.9023
+[  309.8s] P2 Ep47/50 | train_acc=0.9365 | val_loss=0.2501 val_acc=0.9023
+[  310.8s] P2 Ep48/50 | train_acc=0.9373 | val_loss=0.2493 val_acc=0.9025
+[  311.6s] P2 Ep49/50 | train_acc=0.9364 | val_loss=0.2461 val_acc=0.9024
+[  312.7s] P2 Ep50/50 | train_acc=0.9366 | val_loss=0.2454 val_acc=0.9023
+[  313.8s] curves saved to ./results/Experiment_Ablation_M3_seed163/p2_training_curves_seed163.png
+[  314.9s] Mode [M3] final test result - accuracy (Acc): 0.8762 | macro F1: 0.8742
+[  314.9s] per-class F1: [0.7799, 0.7169, 1.0, 1.0]
+[  314.9s] 
+              precision    recall  f1-score   support
+
+       Aging     0.7018    0.8777    0.7799     15501
+       Fault     0.8368    0.6270    0.7169     15500
+       Noise     1.0000    1.0000    1.0000     15501
+      Normal     1.0000    1.0000    1.0000     15500
+
+    accuracy                         0.8762     62002
+   macro avg     0.8846    0.8762    0.8742     62002
+weighted avg     0.8846    0.8762    0.8742     62002
+
+[  314.9s] DONE

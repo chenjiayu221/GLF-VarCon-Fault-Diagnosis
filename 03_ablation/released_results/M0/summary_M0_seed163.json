@@ -1,0 +1,22 @@
+{
+ "mode": "M0",
+ "desc": "Baseline: 11-dim raw-waveform features + MLP(8)",
+ "seed": 163,
+ "input_dim": 11,
+ "params": 132,
+ "trainable_params": 132,
+ "test_correct": 52962,
+ "test_total": 62002,
+ "test_acc": 0.854198,
+ "macro_f1": 0.852555,
+ "best_val_acc": 0.859381,
+ "epochs": 50,
+ "seconds": 52.4,
+ "per_class_f1": [
+  0.7362432164322811,
+  0.6739757645701097,
+  1.0,
+  1.0
+ ],
+ "pred_md5": "37b7ec194d6c443990f4fa65749e8cdf"
+}

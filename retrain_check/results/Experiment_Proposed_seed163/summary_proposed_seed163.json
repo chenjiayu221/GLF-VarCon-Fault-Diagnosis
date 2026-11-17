@@ -1,0 +1,18 @@
+{
+ "model": "Proposed",
+ "slug": "proposed",
+ "seed": 163,
+ "params": 110660,
+ "encoder_params": 110144,
+ "test_acc": 0.994452,
+ "macro_f1": 0.994451,
+ "best_val_acc": 0.996952,
+ "epochs": 150,
+ "seconds": 543.2,
+ "per_class_f1": [
+  0.989010989010989,
+  0.9887940582448368,
+  1.0,
+  1.0
+ ]
+}

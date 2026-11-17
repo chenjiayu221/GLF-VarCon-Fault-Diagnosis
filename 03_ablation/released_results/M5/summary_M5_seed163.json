@@ -1,0 +1,22 @@
+{
+ "mode": "M5",
+ "desc": "full method = Proposed (EncoderHybrid + VarCon + consistency KL)",
+ "seed": 163,
+ "input_dim": 21,
+ "params": 110660,
+ "trainable_params": 516,
+ "test_correct": 61658,
+ "test_total": 62002,
+ "test_acc": 0.994452,
+ "macro_f1": 0.994451,
+ "best_val_acc": 0.996952,
+ "epochs": 150,
+ "seconds": 508.6,
+ "per_class_f1": [
+  0.989010989010989,
+  0.9887940582448368,
+  1.0,
+  1.0
+ ],
+ "pred_md5": "ed423b4605f76e30a8085dfc2b8aa202"
+}
